@@ -8,8 +8,12 @@
 
   //Code here
 
+var me = {
+  name: "Chris",
+  age: 29
+}
 
-
+// alert(me.name);
 
 
 
@@ -23,7 +27,15 @@
   //Code here
 
 
+var favoriteThings = {
+  band: "Linkin Park",
+  food: "Pizza",
+  person: "Elon",
+  book: "Life 3.0",
+  movie: "Last Samurai",
+  holiday: "None"
 
+}
 
 
 
@@ -31,8 +43,8 @@
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
-
+favoriteThings.car = "C63"
+favoriteThings.brand = "Vans"
 
 
 
@@ -40,8 +52,8 @@
 
   //Code here
 
-
-
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 
 //NEXT PROBLEM
@@ -60,6 +72,13 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
+var backPack = {};
+
+var item = "firstPocket"
+
+backPack[item] = "chapstick"
+
+backPack.color = "black"
 
 
 
@@ -69,6 +88,7 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
+// alert(backPack);
  
 
 /*
@@ -79,7 +99,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
   //Code here
 
-
+console.log(backPack);
 
 
 
@@ -101,7 +121,8 @@ var user2 = {
 
   //Code Here
 
-
+user2.name = "Tyler S. McGinnis"
+user2.email = "tyler.mcginnis@devmounta.in"
 
 
 
@@ -123,7 +144,7 @@ var user2 = {
 
   //Code Here
 
-
+var methodCollection = {}
 
 
 /*
@@ -134,7 +155,12 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+methodCollection.alertHello = function(){
+  alert("hello")
+}
+methodCollection.logHello = function(){
+  console.log("hello")
+}
 
 
 
@@ -142,7 +168,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+  methodCollection.alertHello();
+  methodCollection.logHello();
 
 
 
@@ -158,9 +185,17 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
+var makePerson = (name, birthday, ssn)  => {
+  return {name: name, birthday: birthday, ssn: ssn}
+}
 
-
-
+// function makePerson(name, birthday, ssn){
+//   return {
+//     name: name,
+//     birthday: birthday,
+//     ssn: ssn
+//   }
+// }
 
   
 
@@ -172,5 +207,16 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
+
+var makeCard = (cardNumber, expirationDate, securityCode) => {
+  return {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+} 
+
+
+
 
 
